@@ -1,4 +1,5 @@
 Summary:	Time Out plugin for the Xfce panel
+Summary(pl.UTF-8):	Wtyczka upływu czasu dla panelu Xfce
 Name:		xfce4-time-out-plugin
 Version:	0.1.0
 Release:	1
@@ -22,6 +23,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Time Out plugin makes it possible to take periodical breaks from the
 computer every X minutes. During breaks it locks your screen. It
 optionally allows you to postpone breaks for a certain time.
+
+%description -l pl.UTF-8
+Wtyczka Time Out umożliwia robienie regularnych przerw od komputera co
+każde X minut. W czasie przerw blokuje ekran. Opcjonalnie pozwala
+odłożyć przerwy na określony czas.
 
 %prep
 %setup -q
