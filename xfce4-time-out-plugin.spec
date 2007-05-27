@@ -10,7 +10,9 @@ Source0:	http://goodies.xfce.org/releases/xfce4-time-out-plugin/%{name}-%{versio
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-time-out-plugin
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8
+BuildRequires:	gtk+2-devel >= 2:2.8.0
 BuildRequires:	intltool
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.311
 BuildRequires:	xfce4-dev-tools >= 4.4.0
 BuildRequires:	xfce4-panel-devel >= 4.4.0
