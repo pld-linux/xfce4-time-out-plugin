@@ -1,12 +1,12 @@
 Summary:	Time Out plugin for the Xfce panel
 Summary(pl.UTF-8):	Wtyczka upływu czasu dla panelu Xfce
 Name:		xfce4-time-out-plugin
-Version:	0.1.0
+Version:	0.1.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://goodies.xfce.org/releases/xfce4-time-out-plugin/%{name}-%{version}.tar.bz2
-# Source0-md5:	40f8224097db4a622bb51d22051552fe
+# Source0-md5:	d2f5b157cf47c754d8dd007c73a4d1e6
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-time-out-plugin
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8
