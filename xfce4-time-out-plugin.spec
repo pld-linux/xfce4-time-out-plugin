@@ -1,12 +1,12 @@
 Summary:	Time Out plugin for the Xfce panel
 Summary(pl.UTF-8):	Wtyczka upływu czasu dla panelu Xfce
 Name:		xfce4-time-out-plugin
-Version:	1.0.3
+Version:	1.1.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-time-out-plugin/1.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	81e1a961032c7b87d672bed09c681a73
+Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-time-out-plugin/1.1/%{name}-%{version}.tar.bz2
+# Source0-md5:	3087b3248e427822613e5583784b0ac0
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-time-out-plugin
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8
@@ -46,6 +46,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/xfce4/panel/plugins/*.la
+%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/hye
 %{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/ur_PK
 %{__mv} $RPM_BUILD_ROOT%{_datadir}/locale/{hy_AM,hy}
 
