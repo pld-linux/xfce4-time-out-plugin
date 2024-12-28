@@ -1,26 +1,26 @@
 Summary:	Time Out plugin for the Xfce panel
 Summary(pl.UTF-8):	Wtyczka upływu czasu dla panelu Xfce
 Name:		xfce4-time-out-plugin
-Version:	1.1.3
+Version:	1.1.4
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-time-out-plugin/1.1/%{name}-%{version}.tar.bz2
-# Source0-md5:	2fef9fbcc9791de30bcceecfde92d4c3
-URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-time-out-plugin
+Source0:	https://archive.xfce.org/src/panel-plugins/xfce4-time-out-plugin/1.1/%{name}-%{version}.tar.bz2
+# Source0-md5:	9e7651553add7e52856f541e89c8d43e
+URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-time-out-plugin
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake >= 1:1.8
 BuildRequires:	glib2-devel >= 2.50.0
 BuildRequires:	gtk+3-devel >= 3.22.0
-BuildRequires:	intltool
-BuildRequires:	libxfce4ui-devel
+BuildRequires:	libxfce4ui-devel >= 4.16.0
+BuildRequires:	libxfce4util-devel >= 4.16.0
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.601
-BuildRequires:	xfce4-dev-tools >= 4.12.0
-BuildRequires:	xfce4-panel-devel >= 4.12.0
+BuildRequires:	xfce4-dev-tools >= 4.16.0
+BuildRequires:	xfce4-panel-devel >= 4.16.0
 Requires:	gtk-update-icon-cache
 Requires:	hicolor-icon-theme
-Requires:	xfce4-panel >= 4.12.0
+Requires:	xfce4-panel >= 4.16.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -47,8 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/xfce4/panel/plugins/*.la
-%{__rm} -r $RPM_BUILD_ROOT%{_datadir}/locale/{hye,ie,ur_PK}
-%{__mv} $RPM_BUILD_ROOT%{_datadir}/locale/{hy_AM,hy}
+%{__rm} -r $RPM_BUILD_ROOT%{_localedir}/{hye,ie,ur_PK}
+%{__mv} $RPM_BUILD_ROOT%{_localedir}/{hy_AM,hy}
 
 %find_lang %{name}
 
